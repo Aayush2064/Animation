@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;        
+            width: 100px;
+            position: relative;
+        }
+        div.one {
+            animation-name:one;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            background-color: red;
+            
+        }
+        div.two {
+            animation-name: two;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            background-color: blue;
+            
+            
+        }
+        div.three {
+            animation-name: three;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            background-color: green;
+            
+        }
+        div.four {
+            animation-name: four;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            background-color: yellow;
+            
+        }
+        @keyframes one {
+            from{top: 200px;left:0;}
+            to{top: 100px;left:500px;}
+        }
+        @keyframes two {
+            from{top: 0px;left:500px;}
+            to{top: 200px;left:1000px ;}
+        }
+        @keyframes three {
+            from{top: 100px;left:1000px ;}
+            to{top: 300px;left:500px;}
+        }
+        @keyframes four {
+            from{top: 200px;left: 500px;}
+            to{top: 0;left:0;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        1
+    </div>
+    <div class="two">
+        2
+    </div>
+    <div class="three">
+        3
+    </div>
+    <div class="four">
+        4
+    </div>
+</body>
+</html>
